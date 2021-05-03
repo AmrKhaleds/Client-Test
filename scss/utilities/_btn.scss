@@ -1,0 +1,21 @@
+// btn
+.btn{
+    display: inline-block;
+    background-color: $w-color;
+    color: $primary-color;
+    text-align: center;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &.primary{
+        background-color: $primary-color;
+        color: $w-color;
+    }
+
+    &.secondary{
+        background-color: $secondary-color;
+        color: $w-color;
+    }
+}

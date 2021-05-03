@@ -1,18 +1,62 @@
 // Primary Header
-.primary-header{
-    font-size: $large-heading;
-    font-weight: bold;
-    color: $bg-white;
-    display: block;
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 
-}
+    .menu-toggle{
+        position: fixed;
+        top: 50px;
+        right: 0;
+        padding: 0 $conrainer-padding;
+        z-index: 99;
 
-.p-section{
-    font-size: $medium-heading;
-    font-weight: bold;
-    color: $bg-white;
-    margin: 20px;
-    span{
-        color: $bg-light-blue;
+        .btn{
+            padding: 10px 13px;
+        }
+    }
+    .slideshow{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+
+        &-nav{
+            position: absolute;
+            bottom: $conrainer-padding;
+            right: 0;
+            padding-right: $conrainer-padding;
+
+            .btn{
+                padding: 15px 20px;
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: $primary-color;
+                }
+            }
+        }
+        &-info{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 600px;
+            padding-right: $conrainer-padding;
+            color: #222;
+            text-align: right;
+            font-size: 28px;
+            z-index: 3;
+
+            p{
+                font-size: 18px;
+                margin: 20px 0;
+            }
+
+            .slide-1{
+                background-image: url();
+            }
+        }
     }
 }
+
